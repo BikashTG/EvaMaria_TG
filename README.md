@@ -2,7 +2,7 @@
   <img src="assets/IMDB_HPBOT.jpg" alt="IMDB BOT Logo">
 </p>
 <h1 align="center">
-  <b>IMBD_HP Bot</b>
+  <b>EvaMaria_TG</b>
 </h1>
 
 
@@ -54,7 +54,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/harshil8981/EvaMaria_HP">
+<a href="https://heroku.com/deploy?template=https://github.com/BikashTG/EvaMaria_TG">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
