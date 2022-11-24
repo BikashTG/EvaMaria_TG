@@ -375,8 +375,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif quary.data == "start":
         buttons = [[
             InlineKeyboardButton('➕ Click Here For More Buttons ➕', callback_data='show')
-    ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
