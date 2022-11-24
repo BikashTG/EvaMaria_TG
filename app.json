@@ -1,5 +1,5 @@
 {
-    "name": "IMDB_HPBot",
+    "name": "EvaMaria_TG",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
@@ -14,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/harshil8981/EvaMaria_HP",
-    "repository": "https://github.com/harshil8981/EvaMaria_HP",
+    "website": "https://github.com/BikashTG/EvaMaria_TG",
+    "repository": "https://github.com/BikashTG/EvaMaria_TG",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
