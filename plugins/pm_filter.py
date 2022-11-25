@@ -22,6 +22,13 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
+@Client.on_message(filters.command("alive"))
+async def alive(client, message):
+    await message.reply_text("I'm Not Dead...")
+
+@Client.on_message(filters.command("link"))
+async def link(client, message):
+    await message.reply_text("♨️♨️ Are You Movie Lover ? ♨️\n\n🎬 Then You Are Welcomed To My Group For A Daily Breeze Of Movies\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n📌 Old & New Movies/Series\n\n📌 Proper HD, DVD-Rip & Tv-Rip\n\n📌 Available In Various Size\n\n📌 Bengali | Hindi | English & More\n\n༺━━━━━━━ ✧ ━━━━━━━༻\n\n✔️ Group - https://t.me/+t3qvm0BMklkyZGIx\n\n👆Click Link For Join Group")
 
 @Client.on_message(filters.group & filters.text & filters.chat(-1001768250325) & filters.incoming)
 async def give_filter(client,message):
@@ -445,7 +452,7 @@ Phonepe 📲 Soon...
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PROFESSOR_99.format(query.from_user.mention),
+            text=script.PROFESSOR_99.format(query.from_user.mention, greeting),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -500,6 +507,15 @@ MR.Lucifer
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(
             text=script.ALIVE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -510,6 +526,15 @@ MR.Lucifer
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(
             text=script.IMDB_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -519,6 +544,15 @@ MR.Lucifer
             InlineKeyboardButton('🔙 Back', callback_data='manuelfilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
         await query.message.edit_text(
             text=script.LINK_TXT,
             reply_markup=reply_markup,
@@ -535,6 +569,15 @@ MR.Lucifer
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(
             text=script.FAQ_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -544,6 +587,15 @@ MR.Lucifer
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
         await query.message.edit_text(
             text=script.IDS_TXT,
             reply_markup=reply_markup,
@@ -555,7 +607,31 @@ MR.Lucifer
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(
             text=script.SONG_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "start":
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(
+            text=script.HELP_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
