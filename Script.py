@@ -7,7 +7,7 @@ class script(object):
 
 <i><b>For More Information Click ℹ️ Help</i></b>"""
      
-    HELP_TXT = """"""<i><b>Hello 👋 {},</i></b>
+    HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
 <i><b>I can Guide You Through All Of <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
 
