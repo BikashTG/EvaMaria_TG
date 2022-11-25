@@ -120,11 +120,11 @@ async def addfilter(client, message):
 async def get_all(client, message):
     
     chat_type = message.chat.type
-    userid = message.reply_to_message.from_user.id if message.from_user else None
+    userid = message.reply_to_message.id if message.id else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
     if chat_type == "private":
-        userid = message.from_user.id
+        userid = message.id
         grpid = await active_connection(str(userid))
         if grpid is not None:
             grp_id = grpid
@@ -182,7 +182,7 @@ async def get_all(client, message):
         
 @Client.on_message(filters.command('del') & filters.incoming)
 async def deletefilter(client, message):
-    userid = message.reply_to_message.from_user.id if message.from_user else None
+    userid = message.reply_to_message.id if message.id else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
@@ -233,7 +233,7 @@ async def deletefilter(client, message):
 
 @Client.on_message(filters.command('delall') & filters.incoming)
 async def delallconfirm(client, message):
-    userid = message.reply_to_message.from_user.id if message.from_user else None
+    userid = message.reply_to_message.id if message.id else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
