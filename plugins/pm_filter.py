@@ -452,7 +452,7 @@ Phonepe 📲 Soon...
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PROFESSOR_99.format(query.from_user.mention, greeting),
+            text=script.START_TXT.format(query.from_user.mention, greeting),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
