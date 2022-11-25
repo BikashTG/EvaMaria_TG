@@ -436,14 +436,14 @@ Phonepe 📲 Soon...
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('🚨 Alive', callback_data='alive'),
-            InlineKeyboardButton('🔍 IMDB', callback_data='imdb')
+            InlineKeyboardButton('🔍 IMDB', callback_data='imdb'),
             InlineKeyboardButton('🔗 Link', callback_data='link')
             ],[
             InlineKeyboardButton('⚠️ Faq', callback_data='faq'),
-            InlineKeyboardButton('🆔 Ids', callback_data='ids')
+            InlineKeyboardButton('🆔 Ids', callback_data='ids'),
             InlineKeyboardButton('🎼 Song', callback_data='song')
             ],[
-            InlineKeyboardButton('😎 About', callback_data='about')
+            InlineKeyboardButton('😎 About', callback_data='about'),
             InlineKeyboardButton('🏠 Home', callback_data='professor_99'),
             InlineKeyboardButton('❎ Close', callback_data='close')
         ]]
