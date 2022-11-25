@@ -1,7 +1,7 @@
 class script(object):
     START_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/hellodarklord">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
+<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Professor_99">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
 <i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
 
