@@ -2,6 +2,8 @@
 import asyncio
 import re
 import ast
+import datetime
+import pytz
 from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
@@ -415,8 +417,20 @@ Phonepe 📲 Soon...
             InlineKeyboardButton('➕ Click Here For More Buttons ➕', callback_data='professor_99')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        now=datetime.datetime.now()
+        tz=pytz.timezone('Asia/Kolkata')
+        yn=now.astimezone(tz)
+        hour=yn.hour
+        if hour < 12:
+          greeting="Good Morning"
+        elif hour < 15:
+          greeting="Good Afternoon"
+        elif hour < 20:
+          greeting="Good Evening"
+        else:
+          greeting="Good Night"
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),
+            text=script.START_TXT.format(query.from_user.mention, greeting),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
