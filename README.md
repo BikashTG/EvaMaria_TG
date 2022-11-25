@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="assets/IMDB_HPBOT.jpg" alt="IMDB BOT Logo">
-</p>
-<h1 align="center">
-  <b>EvaMaria_TG</b>
-</h1>
-
+![IMG_20221124_223029_741](https://user-images.githubusercontent.com/118190786/203925424-c1c5447a-ff17-49f4-8922-a51774bc73b2.jpg)
 
 [![Stars](https://img.shields.io/github/stars/harshil8981/EvaMaria_HP?style=flat-square&color=yellow)](https://github.com/harshil8981/EvaMaria_HP/stargazers)
 [![Forks](https://img.shields.io/github/forks/harshil8981/EvaMaria_HP?style=flat-square&color=orange)](https://github.com/harshil8981/EvaMaria_HP/fork)
