@@ -482,7 +482,7 @@ MR.Lucifer
 
     elif query.data == "alive":
         buttons = [[
-            InlineKeyboardButton('🔙 Back', callback_data='about')
+            InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -516,6 +516,7 @@ MR.Lucifer
             InlineKeyboardButton('हिंदी', callback_data='hindi'),
             ],[
             InlineKeyboardButton('English', callback_data='english'),
+            ],[
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
