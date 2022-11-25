@@ -141,10 +141,10 @@ async def next_page(bot, query):
         pass
     await query.answer()
 
-
+    
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
-    if query.data == "close_data":
+    if query.data == "close":
         await query.message.delete()
     elif query.data == "delallconfirm":
         userid = query.from_user.id
@@ -412,7 +412,7 @@ Phonepe 📲 Soon...
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('◼️ Click Here For More Buttons ◼️', callback_data='professor_99')
+            InlineKeyboardButton('➕ Click Here For More Buttons ➕', callback_data='professor_99')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -445,7 +445,7 @@ Phonepe 📲 Soon...
             ],[
             InlineKeyboardButton('😎 About', callback_data='about')
             InlineKeyboardButton('🏠 Home', callback_data='professor_99'),
-            InlineKeyboardButton('❎ Close', callback_data='close_data')
+            InlineKeyboardButton('❎ Close', callback_data='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -464,6 +464,18 @@ Phonepe 📲 Soon...
 ❖ Farmework: Pyrogram
 ❖ Database: MongoDB
 ֎ Bot: Indian 🇮🇳
+""", show_alert=True)
+    
+    elif "rsrq" in query.data:
+        return await query.answer("""
+ミ★ MOVIE TIME ★彡
+
+☞ Sᴛᴏʀᴀɢᴇ Oғ Nᴇᴡ & Oʟᴅ Mᴏᴠɪᴇs/Sᴇʀɪᴇs
+☞ Aᴠᴀɪʟᴀʙʟᴇ Iɴ Mᴀɴʏ Sɪᴢᴇs & Lᴀɴɢᴜᴀɢᴇs
+☞ Rᴇᴄᴇɪᴠᴀʙʟᴇ Iɴ Vᴀʀɪᴏᴜs Qᴜᴀʟɪᴛʏ
+
+👑
+MR.Lucifer 
 """, show_alert=True)
 
     elif query.data == "alive":
@@ -551,16 +563,32 @@ async def auto_filter(client, message):
         ]
 
         if offset != "":
-            key = f"{message.chat.id}-{message.message_id}"
-            BUTTONS[key] = search
-            req = message.from_user.id if message.from_user else 0
-            btn.append(
-                [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
-            )
-        else:
-            btn.append(
-                [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
-            )
+        key = f"{message.chat.id}-{message.message_id}"
+        BUTTONS[key] = search
+        req = message.from_user.id if message.from_user else 0
+        btn.append(
+            [InlineKeyboardButton(text="Next Page ➡", callback_data=f"next_{req}_{key}_{offset}")]
+        )    
+        btn.append(
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton("🗑️", callback_data="close"),
+             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+        )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
+        )
+    else:
+        btn.append(
+            [InlineKeyboardButton(text="🗓 1/1", callback_data="pages"),
+             InlineKeyboardButton("🗑️", callback_data="close"),
+             InlineKeyboardButton("⚠️ Faq", callback_data="faq")]
+        )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
+        )
+    btn.insert(0, [
+        InlineKeyboardButton(text="ミ★ MOVIE TIME ★彡", callback_data="rsrq"),
+       ]) 
         imdb = await get_poster(search) if IMDB else None
         if imdb and imdb.get('poster'):
             await message.reply_photo(photo=imdb.get('poster'), caption=f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
