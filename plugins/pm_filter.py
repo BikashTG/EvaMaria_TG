@@ -324,8 +324,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption=f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-            
-        try:
+        buttons = [[
+               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
+               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+               ],[
+               InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+               ],[
+               InlineKeyboardButton('🗑 Close File', callback_data='close')]]
+        try:  
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
                 return
@@ -363,13 +369,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption=f_caption
         if f_caption is None:
             f_caption = f"{title}"
+        buttons = [[
+               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
+               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+               ],[
+               InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+               ],[
+               InlineKeyboardButton('🗑 Close File', callback_data='close')]]
+    elif "scst" in query.data:
+        return await query.answer("""
+» HERE IS THE SOLUTION «
+
+☞ Send Me Rs.50/- Per Month With Payment Proof
+
+UPI 🆔 Details
+
+Gpay 📲 joynathnet4@oksbi
+Phonepe 📲 Soon...
+
+✔️ After Payment Verification Your ID Well Be Freed
+""", show_alert=True)
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
-            caption=f_caption
-            )
-
+            caption=f_caption,
+            reply_markup=InlineKeyboardMarkup(buttons),
+            protect_content=True if ident == 'checksubp' else False
+        )
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
@@ -380,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "professor_99":
         buttons = [[
@@ -403,7 +430,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('🏠 Home', callback_data='professor_99'),
             InlineKeyboardButton('📶 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
