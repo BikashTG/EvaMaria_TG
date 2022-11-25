@@ -699,7 +699,7 @@ async def auto_filter(client, message):
         btn.insert(0, [
             InlineKeyboardButton(text="ミ★ MOVIE TIME ★彡", callback_data="rsrq"),
         ]) 
-        imdb = await get_poster(search) if IMDB else None
+        imdb = await get_poster(search) if ["imdb"] else None
         cap = IMDB_TEMPLATE.format(
             query=search,
             title=imdb['title'],
