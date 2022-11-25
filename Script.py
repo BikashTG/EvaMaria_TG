@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """START_TXT = """<i><b>Hello 👋 {},</i></b>
+    START_TXT = """<i><b>Hello 👋 {},</i></b>
 
 <i><b>I Am Not Only <a href="https://t.me/ItsUniqueMovies2022_Bot">Its Unique Movies Bot</a> To Assist You But Also Employed At <a href="https://t.me/Its_unique_movies_adda">Its Unique Movies</a> Group By <a href="https://t.me/hellodarklord">DarkLord</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
