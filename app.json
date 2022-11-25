@@ -1,5 +1,5 @@
 {
-    "name": "EvaMaria_TG",
+    "name": "MovieTime-Robot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
@@ -14,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/BikashTG/EvaMaria_TG",
-    "repository": "https://github.com/BikashTG/EvaMaria_TG",
+    "website": "https://github.com/BikashTG/MovieTime-Robot",
+    "repository": "https://github.com/BikashTG/MovieTime-Robot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
