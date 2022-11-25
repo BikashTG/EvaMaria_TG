@@ -700,9 +700,7 @@ async def auto_filter(client, message):
             InlineKeyboardButton(text="ミ★ MOVIE TIME ★彡", callback_data="rsrq"),
         ]) 
         imdb = await get_poster(search) if IMDB else None
-    TEMPLATE = settings['template']
-    if imdb:
-        cap = TEMPLATE.format(
+        cap = IMDB_TEMPLATE.format(
             query=search,
             title=imdb['title'],
             votes=imdb['votes'],
