@@ -515,7 +515,7 @@ MR.Lucifer
             InlineKeyboardButton('বাংলা', callback_data='bengali'),
             InlineKeyboardButton('हिंदी', callback_data='hindi'),
             ],[
-            InlineKeyboardButton('English', callback_data='english')
+            InlineKeyboardButton('English', callback_data='english'),
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
