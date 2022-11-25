@@ -384,10 +384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "professor_99":
         buttons = [[
-            InlineKeyboardButton('◀️ Back For Start Button ◀️', callback_data='start')
-            ],[
-            InlineKeyboardButton('🔗 Group', url='https://t.me/+t3qvm0BMklkyZGIx'),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/+z1TgqQLxZi02NmEx')
+            InlineKeyboardButton('🔗 Movie Time', url='https://t.me/+t3qvm0BMklkyZGIx')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton(text='😎 About', callback_data='about')
@@ -406,7 +403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='help'),
+            InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('📶 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -417,7 +414,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif "about" in query.data:
         return await query.answer("""
-꧁֍LUCIFER MORNINGSTAR ROBOT֍꧂
+꧁֍LUCIFER MOVIE BOT֍꧂
 
 🤴 Creator: PROFESSOR-99
 ❖ Language: Python3
