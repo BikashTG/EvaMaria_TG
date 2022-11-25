@@ -7,7 +7,7 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 
 
-@Client.on_message(filters.command('stats') & filters.stats(ADMINS))
+@Client.on_message(filters.command('stats') & filters.ststs(ADMINS))
 async def get_ststs(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
