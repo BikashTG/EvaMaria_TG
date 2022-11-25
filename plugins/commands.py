@@ -93,10 +93,20 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [[
+        InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
+        InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+        ],[
+        InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+        ],[
+        InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+    ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup(buttons),
+        protect_content=True if pre == 'filep' else False,
         )
                     
 
