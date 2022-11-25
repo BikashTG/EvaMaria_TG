@@ -11,7 +11,7 @@ class script(object):
 
 <i><b>I can Guide You Through All Of <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
 
-    PROFESSOR_99 = """<i><b>Hello 👋 {},</i></b>
+    PROFESSOR_99 = """<i><b>Hello 👋 {} {},</i></b>
 
 <i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
