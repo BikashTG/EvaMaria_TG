@@ -1,7 +1,7 @@
 class script(object):
     START_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Professor_99">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
+<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
 <i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
 
@@ -13,77 +13,71 @@ class script(object):
 
     PROFESSOR_99 = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/hellodarklord">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
+<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
 <i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
 
 <i><b>For More Information Click ℹ️ Help</i></b>"""
      
-    
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+    ALIVE_TXT = """Module :- Alive
 
-- Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
+- To Find Out If I'm Dead Or Not
 
-<b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+📚 AVAILABLE COMMANDS :-
 
-    BUTTON_TXT = """Help: <b>Buttons</b>
+★ /alive - Check I'm Alive Or Not 
 
-- Lucifer Bot Supports both url and alert inline buttons.
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/IMDB_HPBot)</code>
+    IMDB_TXT = """Module :- IMDB Info
 
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+- A Module To Get The Movie Informations. Use This Module To Get Movie Informations.
 
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+📚 AVAILABLE COMMANDS :-
 
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+★ /imdb - Get The Film Information From IMDB Source
 
-    CONNECTION_TXT = """Help: <b>Connections</b>
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+    LINK_TXT = """Module :- Invite Link
 
-<b>Commands and Usage:</b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
+- You Can Easily Find Group Invitation Link
 
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+📚 AVAILABLE COMMAND :-
 
-<b>NOTE:</b>
-these are the extra features of tessa
+★ /link - To Get Film District Group Link
 
-<b>Commands and Usage:</b>
-• /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
-<b>NOTE:</b>
-This module only works for my admins
+    FAQ_TXT = """📌 Read The FAQ Before Contacting Support
+✯ ━━━━━ ✧ ━━━━━ ✯
+👉 Here Are Answers To Frequently Asked Questions About Movie Time 
+👉 If You Did Not Find The Answer To Your Question, Please Ask ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>
 
-<b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
+
+    IDS_TXT = """Module :- IDs
+
+- A Module To Fetch Telegram User, Group, Channel & Sticker Info
+
+📚 AVAILABLE COMMANDS :-
+
+★ /id - To Get Telegram User ID
+★ /info - To Get User Information
+★ /json - To Get All Info
+★ /stickerid - To Get TG Sticker ID
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
+
+    SONG_TXT = """Module :- Song
+
+- Download Music Via Link, For Those Who Love Music
+
+📚 AVAILABLE COMMANDS :-
+
+★ /Song [YouTube Link] - To Download Music
+
+Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
