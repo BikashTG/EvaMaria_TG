@@ -2,6 +2,8 @@ import os
 import logging
 import random
 import asyncio
+import datetime
+import pytz
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
@@ -27,9 +29,21 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAEFgzxi8nst3-JNMI8lpeiEGoiX8ZuNnQACkgQAAkOCMFZOKrTnrmt1EikE") 
         await asyncio.sleep(1)
         await m.delete()
+        now=datetime.datetime.now()
+        tz=pytz.timezone('Asia/Kolkata')
+        yn=now.astimezone(tz)
+        hour=yn.hour
+        if hour < 12:
+          greeting="Good Morning"
+        elif hour < 15:
+          greeting="Good Afternoon"
+        elif hour < 20:
+          greeting="Good Evening"
+        else:
+          greeting="Good Night"
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention),
+            caption=script.START_TXT.format(message.from_user.mention, greeting),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
