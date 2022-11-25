@@ -7,7 +7,7 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 
 
-@Client.on_message(filters.command('stats') & filters.incoming(ADMINS))
+@Client.on_message(filters.command('stats') & filters.stats(ADMINS))
 async def get_ststs(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
@@ -19,7 +19,7 @@ async def get_ststs(bot, message):
     free = get_size(free)
     await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
 
-@Client.on_message(filters.command('users') & filters.user(ADMINS))
+@Client.on_message(filters.command('users') & filters.users(ADMINS))
 async def list_users(bot, message):
     # https://t.me/GetTGLink/4184
     raju = await message.reply('Getting List Of Users')
