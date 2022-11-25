@@ -422,10 +422,12 @@ Phonepe 📲 Soon...
         )
     elif query.data == "professor_99":
         buttons = [[
-            InlineKeyboardButton('🔗 Movie Time', url='https://t.me/+t3qvm0BMklkyZGIx')
+            InlineKeyboardButton('🔗 Movie Time', url='https://t.me/+t3qvm0BMklkyZGIx'),
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton(text='😎 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('🔙 Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -510,6 +512,10 @@ MR.Lucifer
         )
     elif query.data == "faq":
         buttons = [[
+            InlineKeyboardButton('বাংলা', callback_data='bengali'),
+            InlineKeyboardButton('हिंदी', callback_data='hindi'),
+            ],[
+            InlineKeyboardButton('English', callback_data='english')
             InlineKeyboardButton('🔙 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
