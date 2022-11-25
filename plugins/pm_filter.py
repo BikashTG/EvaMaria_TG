@@ -374,7 +374,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Click Here For More Buttons ➕', callback_data='show')
+            InlineKeyboardButton('◼️ Click Here For More Buttons ◼️', callback_data='show')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -384,8 +384,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "show":
         buttons = [[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/Hp_botupdate')
+            InlineKeyboardButton('◀️ Back For Start Button', callback_data='start')
+            ],[
+            InlineKeyboardButton('🔗 Group', url='https://t.me/+t3qvm0BMklkyZGIx'),
+            InlineKeyboardButton('📢 Updates', url='https://t.me/+z1TgqQLxZi02NmEx')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -404,7 +406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('🏠 Home', callback_data='help'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -418,7 +420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Hp_botupdate'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('🏠 Home', callback_data='help'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
