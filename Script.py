@@ -1,23 +1,32 @@
 class script(object):
     START_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I Am Not Only <a href="https://t.me/ItsUniqueMovies2022_Bot">Its Unique Movies Bot</a> To Assist You But Also Employed At <a href="https://t.me/Its_unique_movies_adda">Its Unique Movies</a> Group By <a href="https://t.me/hellodarklord">DarkLord</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
+<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/hellodarklord">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
-<i><b>Better You Click Below & Join <a href="https://t.me/Its_unique_movies_adda">Its Unique Movies</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
+<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
 
 <i><b>For More Information Click ℹ️ Help</i></b>"""
      
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    SHOW_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href='https://t.me/IMDB_HPBot'>IMDB_HPBot</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: IMDB_HPBot
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 𝚃𝚎𝚊𝚖 MR.Killer
+    HELP_TXT = """"""<i><b>Hello 👋 {},</i></b>
+
+<i><b>I can Guide You Through All Of <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
+
+    SHOW_TXT = """<i><b>Hello 👋 {},</i></b>
+
+<i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/hellodarklord">PROFESSOR-99</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
+
+<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
+
+<i><b>For More Information Click ℹ️ Help</i></b>"""
+     
+    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: Lucifer Moringstar Robot 
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: PROFESSOR-99
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+
     SOURCE_TXT = """<b>NOTE:</b>
 - IMDB_HPBot is a open source project. 
 - Source - https://github.com/harshil8981/EvaMaria_HP  
