@@ -443,7 +443,7 @@ def time_to_seconds(time):
 @Client.on_message(filters.command(["video"]))
 async def vsong(client, message: Message):
     urlissed = get_text(message)
-    reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
+    reply_id = message.reply_to_message.id if message.reply_to_message else message.id
 
     pablo = await client.send_message(
         message.chat.id, f"**🔍 Searching...** `{urlissed}`", reply_to_message_id=reply_id
