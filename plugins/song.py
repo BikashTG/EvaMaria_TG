@@ -15,6 +15,9 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
+import youtube_dl
+from youtube_search import YoutubeSearch
+import requests
 
 def time_to_seconds(time):
     stringt = str(time)
