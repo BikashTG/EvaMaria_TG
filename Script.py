@@ -3,7 +3,9 @@ class script(object):
 
 <i><b>I Am Not Only <a href="https://t.me/MovieTimeSeries_Robot">Movie Time Bot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
-<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅"""
+<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
+
+<i><b>For More Information Click</i> ➕ Click Here For More Buttons ➕</b>"""
      
     HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
