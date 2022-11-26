@@ -1,4 +1,4 @@
-pyrogram==2.0.59
+pyrogram==2.0.63
 tgcrypto==1.2.2
 pymongo[srv]==3.11.4
 motor==2.4.0
@@ -16,3 +16,6 @@ youtube-search-python==1.4.6
 youtube_search
 youtube-dl
 yt-dlp
+python-arq
+ffmpeg-python
+requests
