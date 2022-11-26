@@ -33,7 +33,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001617384911'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTTI_SHOW_OFF = eval((environ.get('P_TTTI_SHOW_OFF', "True")))
-IMDB = eval((environ.get('IMDB', "False")))
+IMDB = eval((environ.get('IMDB', "True")))
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
 
 # IMDB template 
