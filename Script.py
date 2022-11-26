@@ -3,9 +3,7 @@ class script(object):
 
 <i><b>I Am Not Only <a href="https://t.me/LuciferMorningStar_Robot">Lucifer Moringstar Robot</a> To Assist You But Also Employed At <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> Group By <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</i></b> 😉
 
-<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅
-
-<i><b>For More Information Click ℹ️ Help</i></b>"""
+<i><b>Better You Click Below & Join <a href="https://t.me/+t3qvm0BMklkyZGIx">Movie Time</a> & Feel The Experience Of Downloading Unlimited Movies/Series</i></b> ✅"""
      
     HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
@@ -35,7 +33,7 @@ Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
 📚 AVAILABLE COMMANDS :-
 
-★ /imdb - Get The Film Information From IMDB Source
+★ /imdb [Movie Name] - Get The Film Information From IMDB Source
 
 Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
@@ -45,7 +43,7 @@ Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
 📚 AVAILABLE COMMAND :-
 
-★ /link - To Get Film District Group Link
+★ /link - To Get Movie Time Group Link
 
 Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
