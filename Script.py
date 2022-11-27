@@ -73,7 +73,8 @@ Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
 📚 AVAILABLE COMMANDS :-
 
-★ /Song [YouTube Link] - To Download Music
+★ /Song [Song Name] - To Download Music
+★ /video [Video Name] - To Download Video 
 
 Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
