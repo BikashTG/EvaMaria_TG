@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 @Client.on_message(filters.command(["imdb"]))
 async def imdb_search(client, message):
     if ' ' in message.text:
-        k = await message.reply('🔍 Searching...')
+        k = await message.reply('🔍 Searching Movie...')
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
@@ -40,8 +40,8 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
             ]
         ]
     if imdb.get('poster'):
-        await query.message.reply_photo(photo=imdb['poster'], caption=f"<b>🎬 Title:</b> <a href={imdb['url']}>{imdb.get('title')}</a>\n<b>📆 Release:</b> <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n<b>🌟 Rating:</b> <a href={imdb['url']}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b>✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.", reply_markup=InlineKeyboardMarkup(btn))
+        await query.message.reply_photo(photo=imdb['poster'], caption=f"<b>🎬 Title:</b> <a href={imdb['url']}>{imdb.get('title')}</a>\n<b>📆 Release:</b> <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n<b>🌟 Rating:</b> <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b>✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.", reply_markup=InlineKeyboardMarkup(btn))
         await query.message.delete()
     else:
-        await query.message.edit(f"<b>🎬 Title:</b> <a href={imdb['url']}>{imdb.get('title')}</a>\n<b>📆 Release:</b> <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n<b>🌟 Rating:</b> <a href={imdb['url']}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b>✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.", reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
+        await query.message.edit(f"<b>🎬 Title:</b> <a href={imdb['url']}>{imdb.get('title')}</a>\n<b>📆 Release:</b> <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n<b>🌟 Rating:</b> <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10\n(based on <code>{votes}</code> user ratings.)\n\n<b>🎭 Genres:</b> #{genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n\n<b>☀️ Languages:</b> #{languages}\n<b>🌎 Country of Origin:</b> #{countries}\n<b>🎥 Director:</b> {director}\n\n<b>✍️ Note:</b> This message will be Auto-deleted after 10 minutes to avoid copyright issues.", reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
     await query.answer()
