@@ -348,8 +348,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
                InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
                ],[
-               InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
-               ],[
                InlineKeyboardButton('🗑 Close File', callback_data='close')]]
         try:  
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -393,29 +391,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
                InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
                ],[
-               InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
-               ],[
                InlineKeyboardButton('🗑 Close File', callback_data='close')]]
-    elif "scst" in query.data:
-        return await query.answer("""
-» HERE IS THE SOLUTION «
-
-☞ Send Me Rs.50/- Per Month With Payment Proof
-
-UPI 🆔 Details
-
-Gpay 📲 joynathnet4@oksbi
-Phonepe 📲 Soon...
-
-✔️ After Payment Verification Your ID Well Be Freed
-""", show_alert=True)
+    
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
             reply_markup=InlineKeyboardMarkup(buttons),
-            protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
         await query.answer()
