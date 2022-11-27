@@ -25,10 +25,6 @@ async def start(client, message):
             InlineKeyboardButton('➕ Click Here For More Buttons ➕', callback_data='professor_99')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEFgzxi8nst3-JNMI8lpeiEGoiX8ZuNnQACkgQAAkOCMFZOKrTnrmt1EikE") 
-        await asyncio.sleep(1)
-        await m.delete()
         now=datetime.datetime.now()
         tz=pytz.timezone('Asia/Kolkata')
         yn=now.astimezone(tz)
@@ -41,6 +37,10 @@ async def start(client, message):
           greeting="Good Evening"
         else:
           greeting="Good Night"
+        await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEFgzxi8nst3-JNMI8lpeiEGoiX8ZuNnQACkgQAAkOCMFZOKrTnrmt1EikE") 
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, greeting),
