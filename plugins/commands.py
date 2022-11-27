@@ -104,8 +104,6 @@ async def start(client, message):
         InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
         InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
         ],[
-        InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
-        ],[
         InlineKeyboardButton('🗑 Close File', callback_data='close')
     ]]
     await client.send_cached_media(
