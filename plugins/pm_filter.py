@@ -345,8 +345,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
-               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
+               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
                ],[
                InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
                ],[
@@ -390,8 +390,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
-               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+               InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
+               InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
                ],[
                InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
                ],[
