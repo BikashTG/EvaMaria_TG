@@ -101,12 +101,12 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [[
-        InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Professor_99'),
-        InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Professor_99')
+        InlineKeyboardButton('🆘👤 Owner', url='https://t.me/Hello_Mr_Lucifer'),
+        InlineKeyboardButton('🆘🤖 Contact', url='https://t.me/Hello_Mr_Lucifer')
         ],[
         InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
         ],[
-        InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+        InlineKeyboardButton('🗑 Close File', callback_data='close')
     ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
