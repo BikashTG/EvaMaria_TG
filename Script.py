@@ -69,7 +69,7 @@ Maintained By ✔️ <a href="https://t.me/Hello_Mr_Lucifer">MR.Lucifer</a>"""
 
     SONG_TXT = """Module :- Song
 
-- Download Music Via Link, For Those Who Love Music
+- Music Or Video Download Modules, For Those Who Love Music Or Video
 
 📚 AVAILABLE COMMANDS :-
 
